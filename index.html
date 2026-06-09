@@ -23,7 +23,7 @@
     <main>
       <section id="home" class="hero container reveal">
         <div class="hero-shell">
-          <article class="profile-card glass-card orbit-card">
+          <article class="hero-note glass-card reveal">
             <label class="photo-upload" for="profileImageInput" aria-label="Upload profile picture">
               <img id="profilePreview" class="profile-photo" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240' viewBox='0 0 240 240'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1' y1='0' y2='1'%3E%3Cstop stop-color='%237c9cff'/%3E%3Cstop offset='1' stop-color='%2352d6c0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='240' height='240' rx='60' fill='url(%23g)'/%3E%3Ccircle cx='120' cy='92' r='36' fill='rgba(255,255,255,0.92)'/%3E%3Cpath d='M54 190c18-42 48-64 66-64s48 22 66 64' fill='rgba(255,255,255,0.92)'/%3E%3C/svg%3E" alt="Profile preview" />
               <span class="upload-note">Upload your photo</span>
@@ -40,111 +40,105 @@
               <span>Design</span>
             </div>
           </article>
-
-          <article class="hero-note glass-card reveal">
-            <p class="eyebrow">Highlights</p>
-            <h2>Bright, minimal, and built to let the work speak first.</h2>
-          </article>
         </div>
       </section>
 
       <section id="about" class="section container reveal">
         <div class="section-heading">
-          <p class="eyebrow">About</p>
-          <h2>Focused, modern, and built for real-world impact.</h2>
+          <h2>About Me</h2>
         </div>
-        <div class="about-grid">
-          <article class="card stat-card">
-            <h3>Craft</h3>
-            <p>I create clean interfaces, practical systems, and memorable digital moments.</p>
+        <div class="about-grid about-layout">
+          <article class="about-panel">
+            <div class="about-photo-wrap">
+              <img id="aboutProfilePreview" class="about-photo" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240' viewBox='0 0 240 240'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1' y1='0' y2='1'%3E%3Cstop stop-color='%237c9cff'/%3E%3Cstop offset='1' stop-color='%2352d6c0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='240' height='240' rx='60' fill='url(%23g)'/%3E%3Ccircle cx='120' cy='92' r='36' fill='rgba(255,255,255,0.92)'/%3E%3Cpath d='M54 190c18-42 48-64 66-64s48 22 66 64' fill='rgba(255,255,255,0.92)'/%3E%3C/svg%3E" alt="Alan Biju Varghese profile photo" />
+            </div>
+            <p class="eyebrow">Photo / Avatar</p>
+            <h3 class="about-name">ALAN BIJU VARGHESE</h3>
+            <div class="about-socials" aria-label="Social links">
+              <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.94 8.5A1.56 1.56 0 1 1 6.94 5.38a1.56 1.56 0 0 1 0 3.12ZM5.5 9.75h2.88V18H5.5zM10.2 9.75h2.76v1.12h.04c.38-.72 1.32-1.48 2.72-1.48 2.9 0 3.44 1.91 3.44 4.39V18h-2.88v-6.95c0-1.66-.03-3.79-2.31-3.79-2.31 0-2.67 1.81-2.67 3.68V18H10.2z"/></svg>
+              </a>
+              <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.16 19.18c.5.09.68-.22.68-.48v-1.7c-2.78.61-3.37-1.34-3.37-1.34-.45-1.15-1.11-1.46-1.11-1.46-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.54 9.54 0 0 1 12 6.8c.85 0 1.71.11 2.51.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.33 4.69-4.56 4.94.36.31.68.92.68 1.85v2.74c0 .26.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+              </a>
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=alanbiju70122@gmail.com&su=Hello%20Alan" target="_blank" rel="noopener noreferrer" aria-label="Gmail" title="Gmail">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v11a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 4 17.5zM6.5 7.2 12 11l5.5-3.8v-.2H6.5zm9.8 1.1-4.3 3-4.3-3v7.4h8.6z"/></svg>
+              </a>
+            </div>
           </article>
-          <article class="card stat-card">
-            <h3>Approach</h3>
-            <p>Fast iteration, clear structure, and thoughtful visual hierarchy guide the work.</p>
-          </article>
-          <article class="card stat-card">
-            <h3>Growth</h3>
-            <p>I’m expanding into AI, Python, and elegant product design that feels premium.</p>
+
+          <article class="about-panel">
+            <p class="eyebrow">About Me</p>
+            <p class="lead">Hi, I'm Alan. I'm a developer passionate about Python, AI, and web development. I enjoy building practical projects that solve real problems and help me learn new technologies. Currently, I'm exploring modern web technologies, AI tools, and software development while continuously improving my skills through hands-on projects and experimentation.</p>
           </article>
         </div>
       </section>
 
       <section id="skills" class="section container reveal">
         <div class="section-heading">
-          <p class="eyebrow">Skills</p>
-          <h2>Core strengths behind the work.</h2>
+          <h2>Skills</h2>
         </div>
         <div class="skills-grid">
-          <article class="card skill-card"><h3>Python</h3><p>Automation, logic, and practical prototypes.</p></article>
-          <article class="card skill-card"><h3>Web</h3><p>Responsive interfaces with smooth interactions and clean structure.</p></article>
-          <article class="card skill-card"><h3>AI</h3><p>Exploring smart workflows and elegant AI-powered experiences.</p></article>
-          <article class="card skill-card"><h3>Design</h3><p>Visual clarity, hierarchy, and polished presentation.</p></article>
-          <article class="card skill-card"><h3>Product</h3><p>Turning ideas into useful, real-world features.</p></article>
-          <article class="card skill-card"><h3>Workflow</h3><p>Fast tooling, modern collaboration, and clean execution.</p></article>
-        </div>
-      </section>
-
-      <section id="portfolio" class="section container reveal">
-        <div class="section-heading">
-          <p class="eyebrow">Portfolio</p>
-          <h2>Selected work, curated for clarity and impact.</h2>
-        </div>
-        <div class="filter-row" aria-label="Portfolio filters">
-          <button class="filter-btn is-active" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="writing">Writing</button>
-          <button class="filter-btn" data-filter="social">Social Media</button>
-          <button class="filter-btn" data-filter="videos">Videos</button>
-          <button class="filter-btn" data-filter="graphics">Graphics</button>
-        </div>
-        <div class="portfolio-grid">
-          <article class="card portfolio-card" data-category="writing"><span class="project-tag">Writing</span><h3>Story-Driven Notes</h3><p>Clear research summaries, idea outlines, and structured content for product and learning projects.</p><p class="meta">Narrative, clarity, structure</p></article>
-          <article class="card portfolio-card" data-category="social"><span class="project-tag">Social Media</span><h3>Simple Campaign Concepts</h3><p>Short-form content ideas, launch messaging, and audience-friendly visuals for digital presence.</p><p class="meta">Brand voice, outreach, engagement</p></article>
-          <article class="card portfolio-card" data-category="videos"><span class="project-tag">Videos</span><h3>Product Demo Stories</h3><p>Short video narratives that explain features, workflows, and user impact in a quick, engaging format.</p><p class="meta">Storyboard, demo, messaging</p></article>
-          <article class="card portfolio-card" data-category="graphics"><span class="project-tag">Graphics</span><h3>Visual Identity Concepts</h3><p>Clean layouts, visual hierarchy, and mood-driven graphics for portfolios, apps, and presentations.</p><p class="meta">Layout, color, composition</p></article>
-          <article class="card portfolio-card" data-category="writing"><span class="project-tag">Writing</span><h3>Technical Articles</h3><p>Thoughtful articles that explain AI, Python, and web workflows in approachable language for a broader audience.</p><p class="meta">Explainer, insight, education</p></article>
-          <article class="card portfolio-card" data-category="videos"><span class="project-tag">Videos</span><h3>Mini Walkthroughs</h3><p>Concise, polished walkthroughs that transform technical ideas into something easy to understand and share.</p><p class="meta">Process, teaching, visuals</p></article>
+          <article class="card skill-card">
+            <div class="skill-icon">🐍</div>
+            <h3>Python</h3>
+            <p>Automation, logic, and practical prototypes.</p>
+          </article>
+          <article class="card skill-card">
+            <div class="skill-icon">🌐</div>
+            <h3>Web Developing</h3>
+            <p>Responsive interfaces, clean structure, and smooth user experiences.</p>
+          </article>
+          <article class="card skill-card">
+            <div class="skill-icon">🤖</div>
+            <h3>AI</h3>
+            <p>AI tools like Cursor, Antigravity, Claude, and Stitch for faster development and creative workflows.</p>
+          </article>
         </div>
       </section>
 
       <section id="projects" class="section container reveal">
         <div class="section-heading">
-          <p class="eyebrow">Projects</p>
-          <h2>Signature ideas that blend function and style.</h2>
+          <h2>Projects</h2>
         </div>
         <div class="project-grid">
-          <article class="card project-card"><span class="project-tag">Student Productivity</span><h3>Note Nest</h3><p>A calm, organized academic workspace for notes, files, and productivity flow.</p><p class="meta">Python • Web UI • Clean UX</p></article>
-          <article class="card project-card"><span class="project-tag">Emergency Response</span><h3>ResQ</h3><p>A practical concept for fast coordination and clearer support during urgent moments.</p><p class="meta">Python • AI Logic • Responsive Design</p></article>
-          <article class="card project-card"><span class="project-tag">Interactive Social</span><h3>Cosmic Thoughts</h3><p>A playful digital space for sharing ideas with expressive visuals and smooth interaction.</p><p class="meta">Web • Interaction • Creative UI</p></article>
+          <article class="card project-card">
+            <span class="project-tag">Note Nest</span>
+            <h3>Minimal academic workspace for students</h3>
+            <p>Minimal academic workspace for students to organize notes, assignments, PPTs, and project files semester-wise in a clean distraction-free interface.</p>
+            <p class="meta"><a href="https://note-nest-eta-five.vercel.app/" target="_blank" rel="noopener noreferrer">View live project</a></p>
+          </article>
+          <article class="card project-card">
+            <span class="project-tag">Cosmic Thoughts</span>
+            <h3>Social platform for anonymous ideas</h3>
+            <p>Social platform where people can anonymously share their thoughts, ideas, questions, and feelings as floating interactive bubbles in a digital space.</p>
+            <p class="meta"><a href="https://cosmic-thoughts.vercel.app/" target="_blank" rel="noopener noreferrer">View live project</a></p>
+          </article>
+          <article class="card project-card">
+            <span class="project-tag">ResQ</span>
+            <h3>Smart emergency response platform</h3>
+            <p>A smart emergency response platform that helps users quickly request assistance during critical situations. It enables fast alert sharing, real-time location tracking, and instant communication with emergency contacts, ensuring help reaches users as quickly as possible.</p>
+            <p class="meta"><a href="https://resq.example.com/" target="_blank" rel="noopener noreferrer">View live project</a></p>
+          </article>
         </div>
       </section>
 
-      <section id="journey" class="section container reveal">
-        <div class="section-heading">
-          <p class="eyebrow">Learning Journey</p>
-          <h2>How my skills are evolving into real product work.</h2>
-        </div>
-        <div class="timeline">
-          <article class="card timeline-item"><strong>Phase 1</strong><h3>Foundations</h3><p>Strengthening core programming, problem solving, and simple digital prototypes.</p></article>
-          <article class="card timeline-item"><strong>Phase 2</strong><h3>Product Building</h3><p>Designing interfaces and applications that are practical, responsive, and visually clear.</p></article>
-          <article class="card timeline-item"><strong>Phase 3</strong><h3>AI & Systems</h3><p>Exploring smarter workflows, intelligent logic, and the future of useful software experiences.</p></article>
-        </div>
-      </section>
+
 
       <section id="contact" class="section container reveal">
         <div class="section-heading">
-          <p class="eyebrow">Contact</p>
           <h2>Let’s build something practical and meaningful.</h2>
         </div>
         <div class="contact-grid">
           <article class="card contact-card">
-            <p><strong>Email</strong><br /><a href="mailto:alanbiju70122@gmail.com">alanbiju70122@gmail.com</a></p>
+            <p><strong>Email</strong><br /><a href="https://mail.google.com/mail/?view=cm&fs=1&to=alanbiju70122@gmail.com&su=Hello%20Alan" target="_blank" rel="noopener noreferrer">alanbiju70122@gmail.com</a></p>
             <p><strong>Location</strong><br />Kerala, India</p>
             <p><strong>Availability</strong><br />Open to internships, freelance work, and AI/web projects.</p>
           </article>
           <article class="card contact-card accent-box">
             <h3>Ready to collaborate?</h3>
             <p>Whether you need a polished portfolio, a small web app, or an AI-powered prototype, I’m ready to contribute with energy and curiosity.</p>
-            <a class="button" href="mailto:alanbiju70122@gmail.com">Email Me</a>
+            <a class="button" href="https://mail.google.com/mail/?view=cm&fs=1&to=alanbiju70122@gmail.com&su=Hello%20Alan" target="_blank" rel="noopener noreferrer">Email Me</a>
           </article>
         </div>
       </section>
