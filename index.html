@@ -23,23 +23,41 @@
 
     <main>
       <section id="home" class="hero container reveal">
-        <div class="profile-card">
-          <label class="photo-upload" for="profileImageInput" aria-label="Upload profile picture">
-            <img id="profilePreview" class="profile-photo" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240' viewBox='0 0 240 240'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1' y1='0' y2='1'%3E%3Cstop stop-color='%237c9cff'/%3E%3Cstop offset='1' stop-color='%2352d6c0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='240' height='240' rx='60' fill='url(%23g)'/%3E%3Ccircle cx='120' cy='92' r='36' fill='rgba(255,255,255,0.92)'/%3E%3Cpath d='M54 190c18-42 48-64 66-64s48 22 66 64' fill='rgba(255,255,255,0.92)'/%3E%3C/svg%3E" alt="Profile preview" />
-            <span class="upload-note">Upload your photo</span>
-          </label>
-          <input id="profileImageInput" type="file" accept="image/*" hidden />
+        <div class="hero-shell">
+          <article class="profile-card glass-card">
+            <label class="photo-upload" for="profileImageInput" aria-label="Upload profile picture">
+              <img id="profilePreview" class="profile-photo" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240' viewBox='0 0 240 240'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1' y1='0' y2='1'%3E%3Cstop stop-color='%237c9cff'/%3E%3Cstop offset='1' stop-color='%2352d6c0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='240' height='240' rx='60' fill='url(%23g)'/%3E%3Ccircle cx='120' cy='92' r='36' fill='rgba(255,255,255,0.92)'/%3E%3Cpath d='M54 190c18-42 48-64 66-64s48 22 66 64' fill='rgba(255,255,255,0.92)'/%3E%3C/svg%3E" alt="Profile preview" />
+              <span class="upload-note">Upload your photo</span>
+            </label>
+            <input id="profileImageInput" type="file" accept="image/*" hidden />
 
-          <p class="eyebrow">Welcome</p>
-          <h1>Alan Biju Varghese</h1>
-          <p class="subtitle">B.Tech student passionate about AI, Python, and building useful web experiences.</p>
+            <p class="eyebrow">Creative developer</p>
+            <h1 class="profile-name">Alan Biju Varghese</h1>
+            <p class="subtitle profile-tagline">B.Tech student crafting AI-driven ideas, elegant web interfaces, and practical digital products.</p>
+            <div class="badge-row">
+              <span>AI • Web</span>
+              <span>Python</span>
+              <span>Design</span>
+            </div>
+          </article>
+
+          <aside class="hero-side glass-card">
+            <p class="eyebrow">Now building</p>
+            <h2>Modern, minimal, high-impact portfolio work.</h2>
+            <p class="lead">Focused on clean visuals, smart interactions, and products that feel premium on any screen.</p>
+            <div class="mini-grid">
+              <article class="mini-card"><strong>01</strong><span>AI workflows</span></article>
+              <article class="mini-card"><strong>02</strong><span>Responsive UI</span></article>
+              <article class="mini-card"><strong>03</strong><span>Fast prototypes</span></article>
+            </div>
+          </aside>
         </div>
       </section>
 
       <section id="about" class="section container reveal">
         <div class="section-heading">
           <p class="eyebrow">About</p>
-          <h2>Creative developer with a strong curiosity for modern products.</h2>
+          <h2>Concise, thoughtful work with a strong product mindset.</h2>
         </div>
         <div class="about-grid">
           <article class="card">
@@ -60,7 +78,7 @@
       <section id="skills" class="section container reveal">
         <div class="section-heading">
           <p class="eyebrow">Skills</p>
-          <h2>Core tools and strengths I bring to a project.</h2>
+          <h2>Tools and strengths that shape my projects.</h2>
         </div>
         <div class="skills-grid">
           <article class="card skill-card"><h3>Python</h3><p>Automation, logic, and product prototypes.</p></article>
@@ -97,7 +115,7 @@
       <section id="projects" class="section container reveal">
         <div class="section-heading">
           <p class="eyebrow">Projects</p>
-          <h2>Selected work that reflects my interests and growth.</h2>
+          <h2>Selected work that reflects my style and growth.</h2>
         </div>
         <div class="project-grid">
           <article class="card project-card"><span class="project-tag">Student Productivity</span><h3>Note Nest</h3><p>A distraction-free academic workspace for organizing notes, assignments, PPTs, and semester files with clarity.</p><p class="meta">Tech: Python, web UI, productivity design</p></article>
