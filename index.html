@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Modern developer portfolio for Alan Biju Varghese with dark theme, projects, skills, and contact information." />
-    <title>Alan Biju Varghese | Developer Portfolio</title>
+    <meta name="description" content="A polished, portfolio-style profile inspired by modern Authory-style presentation with featured work, categories, and contact details." />
+    <title>Alan Biju Varghese | Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -14,9 +14,8 @@
       <a class="brand" href="#home">Alan Biju Varghese</a>
       <nav class="nav-links">
         <a href="#about">About</a>
-        <a href="#skills">Skills</a>
+        <a href="#portfolio">Portfolio</a>
         <a href="#projects">Projects</a>
-        <a href="#journey">Journey</a>
         <a href="#contact">Contact</a>
       </nav>
       <a class="button small" href="#contact">Let’s Talk</a>
@@ -24,35 +23,17 @@
 
     <main>
       <section id="home" class="hero container reveal">
-        <div class="hero-copy">
-          <p class="eyebrow">Hello, I’m Alan</p>
-          <h1>Building practical AI, Python, and web experiences.</h1>
-          <p class="subtitle">I’m a B.Tech student creating thoughtful digital tools, solving real-world problems, and learning fast in the intersection of design, code, and intelligent systems.</p>
-          <div class="hero-actions">
-            <a class="button" href="#projects">View Projects</a>
-            <a class="button secondary" href="#contact">Start a Conversation</a>
-          </div>
-          <ul class="mini-tags">
-            <li>AI &amp; Python</li>
-            <li>Responsive Web Design</li>
-            <li>Product-focused Thinking</li>
-          </ul>
-        </div>
+        <div class="profile-card">
+          <label class="photo-upload" for="profileImageInput" aria-label="Upload profile picture">
+            <img id="profilePreview" class="profile-photo" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240' viewBox='0 0 240 240'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1' y1='0' y2='1'%3E%3Cstop stop-color='%237c9cff'/%3E%3Cstop offset='1' stop-color='%2352d6c0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='240' height='240' rx='60' fill='url(%23g)'/%3E%3Ccircle cx='120' cy='92' r='36' fill='rgba(255,255,255,0.92)'/%3E%3Cpath d='M54 190c18-42 48-64 66-64s48 22 66 64' fill='rgba(255,255,255,0.92)'/%3E%3C/svg%3E" alt="Profile preview" />
+            <span class="upload-note">Upload your photo</span>
+          </label>
+          <input id="profileImageInput" type="file" accept="image/*" hidden />
 
-        <aside class="hero-panel">
-          <div class="panel-card stat-card">
-            <span>Focus</span>
-            <strong>AI + Web</strong>
-          </div>
-          <div class="panel-card stat-card">
-            <span>Current Goal</span>
-            <strong>Build useful tools</strong>
-          </div>
-          <div class="panel-card stat-card">
-            <span>Location</span>
-            <strong>Kerala, India</strong>
-          </div>
-        </aside>
+          <p class="eyebrow">Welcome</p>
+          <h1>Alan Biju Varghese</h1>
+          <p class="subtitle">B.Tech student passionate about AI, Python, and building useful web experiences.</p>
+        </div>
       </section>
 
       <section id="about" class="section container reveal">
@@ -91,30 +72,37 @@
         </div>
       </section>
 
+      <section id="portfolio" class="section container reveal">
+        <div class="section-heading">
+          <p class="eyebrow">Portfolio</p>
+          <h2>Content categories inspired by the reference portfolio layout.</h2>
+        </div>
+        <div class="filter-row" aria-label="Portfolio filters">
+          <button class="filter-btn is-active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="writing">Writing</button>
+          <button class="filter-btn" data-filter="social">Social Media</button>
+          <button class="filter-btn" data-filter="videos">Videos</button>
+          <button class="filter-btn" data-filter="graphics">Graphics</button>
+        </div>
+        <div class="portfolio-grid">
+          <article class="card portfolio-card" data-category="writing"><span class="project-tag">Writing</span><h3>Story-Driven Notes</h3><p>Clear research summaries, idea outlines, and structured content for product and learning projects.</p><p class="meta">Narrative, clarity, structure</p></article>
+          <article class="card portfolio-card" data-category="social"><span class="project-tag">Social Media</span><h3>Simple Campaign Concepts</h3><p>Short-form content ideas, launch messaging, and audience-friendly visuals for digital presence.</p><p class="meta">Brand voice, outreach, engagement</p></article>
+          <article class="card portfolio-card" data-category="videos"><span class="project-tag">Videos</span><h3>Product Demo Stories</h3><p>Short video narratives that explain features, workflows, and user impact in a quick, engaging format.</p><p class="meta">Storyboard, demo, messaging</p></article>
+          <article class="card portfolio-card" data-category="graphics"><span class="project-tag">Graphics</span><h3>Visual Identity Concepts</h3><p>Clean layouts, visual hierarchy, and mood-driven graphics for portfolios, apps, and presentations.</p><p class="meta">Layout, color, composition</p></article>
+          <article class="card portfolio-card" data-category="writing"><span class="project-tag">Writing</span><h3>Technical Articles</h3><p>Thoughtful articles that explain AI, Python, and web workflows in approachable language for a broader audience.</p><p class="meta">Explainer, insight, education</p></article>
+          <article class="card portfolio-card" data-category="videos"><span class="project-tag">Videos</span><h3>Mini Walkthroughs</h3><p>Concise, polished walkthroughs that transform technical ideas into something easy to understand and share.</p><p class="meta">Process, teaching, visuals</p></article>
+        </div>
+      </section>
+
       <section id="projects" class="section container reveal">
         <div class="section-heading">
           <p class="eyebrow">Projects</p>
           <h2>Selected work that reflects my interests and growth.</h2>
         </div>
         <div class="project-grid">
-          <article class="card project-card">
-            <span class="project-tag">Student Productivity</span>
-            <h3>Note Nest</h3>
-            <p>A distraction-free academic workspace for organizing notes, assignments, PPTs, and semester files with clarity.</p>
-            <p class="meta">Tech: Python, web UI, productivity design</p>
-          </article>
-          <article class="card project-card">
-            <span class="project-tag">Emergency Response</span>
-            <h3>ResQ</h3>
-            <p>An application concept focused on faster rescue coordination and practical support in urgent scenarios.</p>
-            <p class="meta">Tech: Python, AI logic, responsive layout</p>
-          </article>
-          <article class="card project-card">
-            <span class="project-tag">Interactive Social</span>
-            <h3>Cosmic Thoughts</h3>
-            <p>A playful digital space for anonymous sharing, interaction, and expressive communication through bubbles and visuals.</p>
-            <p class="meta">Tech: Web, interactive UI, real-time ideas</p>
-          </article>
+          <article class="card project-card"><span class="project-tag">Student Productivity</span><h3>Note Nest</h3><p>A distraction-free academic workspace for organizing notes, assignments, PPTs, and semester files with clarity.</p><p class="meta">Tech: Python, web UI, productivity design</p></article>
+          <article class="card project-card"><span class="project-tag">Emergency Response</span><h3>ResQ</h3><p>An application concept focused on faster rescue coordination and practical support in urgent scenarios.</p><p class="meta">Tech: Python, AI logic, responsive layout</p></article>
+          <article class="card project-card"><span class="project-tag">Interactive Social</span><h3>Cosmic Thoughts</h3><p>A playful digital space for anonymous sharing, interaction, and expressive communication through bubbles and visuals.</p><p class="meta">Tech: Web, interactive UI, real-time ideas</p></article>
         </div>
       </section>
 
